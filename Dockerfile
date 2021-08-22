@@ -15,7 +15,7 @@ RUN conda update conda -y \
 # Installing additional libraries
 RUN pip install psycopg2-binary \
 && pip install pip install https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow_cpu-2.6.0-cp38-cp38-manylinux2010_x86_64.whl \
-&& pip install pygad \
+&& pip3 install pygad \
 && pip install keras
 
 RUN conda install -y -c conda-forge pydotplus \
