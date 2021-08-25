@@ -21,7 +21,7 @@ RUN pip install psycopg2-binary \
 RUN conda install -y -c conda-forge pydotplus \
 && conda install -y -c anaconda joblib
 
-# Installing extensions for Jupyter Notebooks
+# Installing extensions for Jupyter Notebook
 RUN pip install jupyter_contrib_nbextensions \
 && jupyter contrib nbextension install --system \
 && pip install jupyter_nbextensions_configurator \
@@ -30,7 +30,7 @@ RUN pip install jupyter_contrib_nbextensions \
 && pip install yapf \
 && pip install nbconvert==5.6.1
 
-# Creating a directory for Jupyter Notebooks
+# Creating a directory for Jupyter Notebook
 RUN mkdir -p /home/notebooks
 
 # Setting working directory
@@ -39,5 +39,5 @@ WORKDIR /home/notebooks
 # Jupyter listens port: 8888
 EXPOSE 8888
 
-# Run Jupyter Notebooks
+# Running Jupyter Notebook
 CMD jupyter notebook --notebook-dir=/home/notebooks --ip='*' --port 8888 --no-browser --allow-root
