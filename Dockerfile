@@ -36,8 +36,8 @@ RUN mkdir -p /home/notebooks
 # Setting working directory
 WORKDIR /home/notebooks
 
-# Jupyter listens port: 8888
-EXPOSE 8888
+# Jupyter and Tensorboard ports
+EXPOSE 8888 6006
 
 # Running Jupyter Notebook
 CMD jupyter notebook --notebook-dir=/home/notebooks --ip='*' --port 8888 --no-browser --allow-root
