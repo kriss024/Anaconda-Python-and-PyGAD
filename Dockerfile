@@ -19,7 +19,7 @@ RUN pip install psycopg2-binary \
 && pip install keras
 
 RUN conda install -y -c conda-forge pydotplus \
-&& conda install -y -c anaconda joblib
+&& conda install -y -c conda-forge hyperopt
 
 # Installing extensions for Jupyter Notebook
 RUN pip install jupyter_contrib_nbextensions \
@@ -36,7 +36,7 @@ RUN mkdir -p /home/notebooks
 # Setting working directory
 WORKDIR /home/notebooks
 
-# Jupyter and Tensorboard ports
+# Jupyter Notebook and Tensorboard ports
 EXPOSE 8888 6006
 
 # Running Jupyter Notebook

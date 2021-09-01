@@ -1,5 +1,5 @@
 # Anaconda Python for Data Science
-### Python 3.8.8 with PyGAD, TensorFlow 2.6, scikit-learn libraries
+### Python 3.8.8 with PyGAD, TensorFlow 2, scikit-learn libraries
 
 
 ## How to Use this Image
@@ -22,10 +22,10 @@ After that you can start using the commands in container
 - [x] Bokeh
 - [x] Dask
 - [x] Flask
+- [x] Hyperopt
 - [x] Keras
 - [x] NumPy
 - [x] imageio
-- [x] Joblib
 - [x] Openpyxl
 - [x] Pandas
 - [x] scikit-learn
